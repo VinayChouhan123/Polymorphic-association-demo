@@ -1,0 +1,9 @@
+<h1>Comment List</h1>
+
+<% @comments.each do |comment| %>
+	<li>
+		<%= link_to comment.title, comment %>
+	</li>
+<% end %><br>
+
+<%= link_to "Create Comment", new_comment_path(@comment) %>

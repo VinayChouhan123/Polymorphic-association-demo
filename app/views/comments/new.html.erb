@@ -1,0 +1,21 @@
+<h1>New Comment</h1>
+
+<%= form_for @comment do |form| %> 
+	<div>
+		<%= form.label :title %><br>
+		<%= form.text_field :title %>
+	</div><br>
+
+	<div>
+		<%= form.label :"Commentable ID" %><br>
+		<%= form.text_field :commentable_id %>
+	</div><br>
+
+	<div>
+		<%= form.label :"Commentable type" %><br>
+		<%= form.text_field :commentable_type %>
+	</div><br>
+	
+	<%= form.submit %>
+
+<% end %>
